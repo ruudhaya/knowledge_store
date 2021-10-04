@@ -1,0 +1,15 @@
+https://github.blog/2020-07-27-highlights-from-git-2-28/#introducing-init-defaultbranch
+
+Default branch name as 'main' instead of 'master'
+
+Introducing init.defaultBranch
+When you initialize a new Git repository from scratch with git init, Git has always created an initial first branch with the name master. In Git 2.28, a new configuration option, init.defaultBranch is being introduced to replace the hard-coded term. (For more background on this change, this statement from the Software Freedom Conservancy is an excellent place to look).
+
+Starting in Git 2.28, git init will instead look to the value of init.defaultBranch when creating the first branch in a new repository. If that value is unset, init.defaultBranch defaults to master. Here, it’s important to note that:
+
+This configuration variable can be set by the user, and overriding the default value is as easy as:
+
+$ git config --global init.defaultBranch main
+
+This configuration variable only affects new repositories, and does not cause branches in existing projects to be renamed. git clone will also continue to respect the HEAD of the repository you’re cloning from, so you won’t see a change in branch names until a maintainer initiates one.
+This change supports the many communities, both on GitHub and in the wider Git community, who are considering renaming the default branch name of their repository from master.
