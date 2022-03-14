@@ -1,4 +1,8 @@
 fileignoreconfig:
 - filename: knowlwdge_store/git/Launch vscode from terminal.log
   checksum: 17ea09624281e80617c3a610dd3d37b4b38ca21f823f193ef2eaa620c19dafcd
+- filename: knowlwdge_store/git/Multiple_github_accounts.log
+  checksum: a9288c4342a8cf7aeb2b6b75d1573164d23d54ebbdc7d9829ac8c116971766e4
+- filename: knowlwdge_store/git/add_tamil_keyboard_mac.log
+  checksum: 37795035c69cb99952f7a7e3fa1ec6b81d6c9aa7c71ab58d9a464f61dfd62288
 version: "1.0"
