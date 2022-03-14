@@ -1,0 +1,9 @@
+
+Open VSCode
+
+Cmd + Shift + P -> Type 'Shell'
+| Shell Command: Install 'Code' Command in PATH
+
+This should add it to the PATH
+
+and we can open vscode with Code <folder/file path>

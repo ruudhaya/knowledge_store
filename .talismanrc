@@ -1,0 +1,4 @@
+fileignoreconfig:
+- filename: knowlwdge_store/git/Launch vscode from terminal.log
+  checksum: 17ea09624281e80617c3a610dd3d37b4b38ca21f823f193ef2eaa620c19dafcd
+version: "1.0"
