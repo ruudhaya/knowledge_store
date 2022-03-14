@@ -1,0 +1,23 @@
+Graph Data to OGM Code Generation
+---------------------------------
+
+[Neo4J Database]
+
+Handles the Domain Model Objects and their relations better
+
+We could use OGM - Object Graph model similar to ORM for relational databases
+
+From the Graph data, can we get an equivalent data models?
+
+Usage:
+    We can define nodes and relations using the Cypher Query Language and create/populate the Graph database.
+    Once it has been populated, to operate with the Graph database, we need to define the equivalent objects and need to work with OGM.
+
+    Similar to creating the bootstrapping code from OpenAPI Specification, can we create similar bootstrapping implementation in any language
+
+Plans:
+- Study the OGM and its implementaions in different places (Spring Data / Neo4J Graph)
+- Ability to get All the relation from a root node(s)
+- Ability to get all the attributes of a node/relation
+- Map them to the data annotating constructs in OGM
+- Generate code using some DSL - Need more clarity, but it would have been available for similar problems

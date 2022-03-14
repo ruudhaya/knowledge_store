@@ -1,4 +1,6 @@
 fileignoreconfig:
+- filename: Ideas/Graph_To_DataModel.log
+  checksum: b619ea0bad024b7807cd01807b4ffefa80a560300f70639de5be432f97209639
 - filename: Multiple_github_accounts.log
   checksum: d52fadeb480c5ffcb1f0a33b02716861a283204c8b086888550348e2a322e7a7
 - filename: knowlwdge_store/git/Launch vscode from terminal.log
