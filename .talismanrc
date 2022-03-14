@@ -1,4 +1,6 @@
 fileignoreconfig:
+- filename: Multiple_github_accounts.log
+  checksum: d52fadeb480c5ffcb1f0a33b02716861a283204c8b086888550348e2a322e7a7
 - filename: knowlwdge_store/git/Launch vscode from terminal.log
   checksum: 17ea09624281e80617c3a610dd3d37b4b38ca21f823f193ef2eaa620c19dafcd
 - filename: knowlwdge_store/git/Multiple_github_accounts.log

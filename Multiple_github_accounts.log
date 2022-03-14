@@ -4,3 +4,25 @@ One of my work account was using signing key and email, name
 For my personal github account i use ssh key for accessing repo
 
 How to switch between work and personal repositories?
+
+I have added the accounts using 
+- ssh  key generation
+- adding public key to github profile
+- Adding private key file to the git configuration in ~/.ssh/config
+
+--Sample--
+Host ruudhaya
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/github-ruudhaya
+
+In the git clone command replace the hostname with the config name given for the host in above config file
+- instead of "git clone git@github.com:ruudhaya/knowledge_store.git"
+- used "git clone git@ruudhaya:ruudhaya/knowledge_store.git"
+
+Still, the commits were having the my work email and name, which has been configured in --global config
+Do the following to use the personal email and name -
+
+Once the repository is cloned, updated the user.name and user.email for this particular repository
+git config user.name "udhay"
+git config user.email "personalemail@gmail.com"
