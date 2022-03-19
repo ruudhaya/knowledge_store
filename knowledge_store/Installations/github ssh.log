@@ -1,0 +1,58 @@
+Usage:
+
+Used to connect our machine to github web application.
+
+SSH - Secure shell Protocol
+
+This will produce two keys (Private and Public)
+
+Private key will be stored in the machine (laptop/computer)
+
+Public key will be given to the github web application
+
+Private key வச்சு lock பண்ணினால், Public key வச்சு open பண்ண முடியும் 
+
+
+How to create SSH Key in Windows?
+
+Open Windows Command Prompt
+Type the following, fill your email address used in github.com login
+
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+pass phrase கேட்டால் provide a known password, password மறக்க கூடாது 
+
+file name கேட்கும் , Enter key  press பண்ணினால் அதுவே ஒரு name எடுத்துக்கும் 
+
+இரண்டு file create ஆகியிருக்கும் in folder "C:\Users\Udhaya\.ssh\"
+<ssh_key_filename>
+<ssh_key_filename>.pub
+
+---- SSH Key Creation DONE ----
+
+Copy the contents of the file <ssh_key_filename>.pub, இது தான் Public key
+
+Open the file in notepad, Select All contents with "Ctrl + A", Copy with command "Ctrl + C"
+
+Open the github.com website
+Right Top of page -> Click on Profile Image
+Click "Settings" in the Menu. கீழிருந்து ரெண்டாவது option
+Left Side options la, click on "SSH and GPG Keys" option
+
+You should be in the page https://github.com/settings/keys, இல்லைனா click on the link https://github.com/settings/keys
+Click on the button "New SSH Key"
+Provide a name for the SSH key (Eg: Udhay Laptop Windows)
+Paste the contents of the public key in the second Text box
+Click on the button "Add SSH Key"
+
+---- Now your machine and Github.com has understanding ----
+
+In your Command Prompt run the following 2 commands one by one
+
+git config --global user.email "youremail@gmail.com" 
+git config --global user.name "your name"
+
+
+----------------------------
+
+"Run the command" = Type the command and press Enter Key
