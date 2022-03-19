@@ -1,0 +1,97 @@
+Title: Spring Boot For Beginners
+
+Youtube: https://www.youtube.com/watch?v=OgZQUkQPDyo
+Language: Tamil
+Duration: 1:10:51
+
+Notes:
+-----
+
+Building end to end a spring boot application
+
+MovieList application
+    - Displaying a tabhle with movie name, description and actor name
+
+    Thymeleaf tempalte
+    backend with spring boot
+
+Application flow diagram
+------------------------
+Browser -> Controller (Spring Controller) -> 
+
+Controller - GET(info vaanga) / POST (form submit panna)
+
+contoller direct ah db kooda paesalaam, but not good process
+
+Spring Repository layer
+    - Using this layer to talk with Database
+    - Will decouple controller and Database     // Decouple - Sambantham kedayaadhu
+
+Repository - oru Spring component
+
+Servlet oru controller thaan
+
+Building Application
+--------------------
+
+IDE Used: STS - Spring Tool Suite
+    - Another video for installation of STS
+
+Project Creation:
+
+Maven
+Java 11
+Dependencies:
+ - Spring Web - For web application
+ - Spring Data JPA - For database connection
+ - Thymeleaf - for frontend templating - Template mean Achu, adhula fill pannunaa poadhum
+ - Spring Boot Actuator - Debugging use aagum
+ - H2 Database - In memory database
+
+Open the Created Project, it will initialize (Starting setup for project) and download the dependencies from internet
+
+Open the SpringBoot Dashboard view, see one entry called "movie-list", right click and select "Run" from the Menu
+
+Verify the logs, in the terminal - saying "Completed Initialization"
+Four lines above there should be a line saying "Tomcat started on port: 8080"
+
+If this is not happening, and giving "the port already in use" error, follow the below steps:
+- Open "application.properties" from the "Explorer View"
+ - It is available under the folder "/src/main/resources/"
+- Add the following line in it (The file may be empty in the beginning, if there is no file, create the file)
+ server.port = 8081
+
+If this port also not available, use another number 8082 (already in use means innoru application ithae port la run aagudhunu artham)
+
+Computer - apartment
+Port Number - Door Number
+Application - Ulla vaazhum family
+
+
+---- First Endpoint -----
+
+Create MovieListController.java in a package 'Controller'
+- Add @Controller annotation
+- Add RequestMapping(method="RequestMethod.GET", value="/movies")
+- return a view name (src/templates/movielist.html) indha template file oda, name without extension thaan view name
+
+Run the application and hit http://localhost:8080/movies - movielist.html file content should be seen
+
+---- Connect to Database -----
+
+Create model object - based on the requirement (Enna Frontend la kaattanum?)
+
+Create Movie.java in a package 'model'
+
+Creating Repository interface extending JPARepository
+
+Connecting to the Repository and returning through GET /movies
+
+POST Endpoint Creation - With RequestBody and ResponseEntity
+    use the save(entity) method of the JPA Repository
+
+
+
+
+
+
